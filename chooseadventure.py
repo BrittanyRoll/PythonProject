@@ -37,10 +37,12 @@ elif user_input == "ticket B":
                 print("You put your stuff on the ground and ask some one to take a picture. You got to pose and when you turn around, the person and all of your stuff is gone! You can't get home!")
                 print("Game Over!")
             else:
-                print("Try again!")
+                if user_input != "food" or "pictures":
+                    print("Try again!")
 
         else:
-            print("Try again")
+            if user_input != "hotel" or "pyramids":
+                print("Try again")
 
 
     elif user_input == "cab":
@@ -53,7 +55,13 @@ elif user_input == "ticket B":
             print("You are driven to the Nile and are told to get on a raft. You get on and end up stuck in the middle of the river. You try to swim to land, but you drown.")
             print("Game Over!")
         else:
+            if user_input != "hotel" or "random destination":
+                print("Try again")
+
+    else:
+        if user_input != "person" or "cab":
             print("Try again")
 
 else:
-    print("Try again")
+    if user_input != "left" or "ticket B":
+        print("Try again")
