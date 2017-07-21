@@ -1,0 +1,9 @@
+import random
+def menu():
+    side = ["corn", "potatoes", "fries", "salad", "bread"]
+    main = ["pizza", "salmon", "soup", "pad thai", "pasta"]
+    dess = ["cake", "ice cream", "tiramisu", "fruit"]
+
+    print("Your dinner tonight is " + random.choice(side) + " and a main course of " + random.choice(main) + " and " + random.choice(dess) + "!")
+
+menu()
