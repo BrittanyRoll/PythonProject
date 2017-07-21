@@ -31,4 +31,4 @@ new_image = Image.new("RGB", my_image.size) #Creates a new image that will be th
 new_image.putdata(recolored) #Adds the data from the recolored list to the image.
 new_image.show() #show the new image on the screen
 new_image.save("recolored.jpg", "jpeg") #save the new image as "recolored.jpg"
-#need to have updated version of python and in command prompt need to put in "python install pillow==4.0.0"/need to download pillow
+#need to have updated version of python and in command prompt need to put in "pip install pillow==4.0.0"/need to download pillow
